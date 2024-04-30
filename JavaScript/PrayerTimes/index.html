@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer times</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Prayer Times</h1>
+        <form id = "inputForm">
+        <div id = "inputFields">
+            <input type="text" id="city" placeholder="City">
+            <button id="submit">Submit</button>
+        </div>
+        </form onsubmit = "fetchData()">
+        <div id="prayers">
+            <p id="fajr"></p>
+            <p id="dhuhr"></p>
+            <p id="asr"></p>
+            <p id="maghrib"></p>
+            <p id="isha"></p>  
+        </div>
+        <div class="nextPrayer">
+            <p id="nextPrayer"></p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
